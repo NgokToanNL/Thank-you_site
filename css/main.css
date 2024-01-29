@@ -1,0 +1,67 @@
+:root {
+    --primary-text-color: #6B68EC;
+    --secondary-text-color: #484855;
+    --button-text-color: #FFFFFF;
+    --btn-bg-color: #1C1C25;
+}
+
+html, body{
+    font-family: "Open Sans", sans-serif;
+
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    height: 324px;
+    width: 256px;
+    margin: 98px 591px 42px;
+}
+
+
+.title{
+    font-weight: 800;
+    font-size: 95px;
+    line-height: 129.37px;
+    text-align: center;
+
+    color: var(--primary-text-color);
+}
+
+.text{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29.96px;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+}
+
+.btn {
+    display: block;
+    height: 99px;
+    border: 0px solid transparent;
+    margin-top: 69px;
+    margin-bottom: 164px;
+
+    cursor: pointer;
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+.btn.link {
+    padding: 37px 86px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.51px;
+
+    text-decoration: none;
+    color: var(--button-text-color);
+    background-color: var(--btn-bg-color);
+}
