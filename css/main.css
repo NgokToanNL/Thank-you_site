@@ -1,67 +1,91 @@
 :root {
     --primary-text-color: #6B68EC;
     --secondary-text-color: #484855;
-    --button-text-color: #FFFFFF;
-    --btn-bg-color: #1C1C25;
 }
 
-html, body{
+body {
     font-family: "Open Sans", sans-serif;
-
-    height: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.img{
-    height: 324px;
-    width: 256px;
-    margin: 98px 591px 42px;
-}
-
-
-.title{
-    font-weight: 800;
-    font-size: 95px;
-    line-height: 129.37px;
+    background: #FBFDFF;
     text-align: center;
+    font-style: normal;
+    line-height: normal;
+}
 
+.img {
+    margin-top: 98px;
+    margin-bottom: 36px;
+}
+
+.title {
     color: var(--primary-text-color);
+    font-size: 95px;
+    font-weight: 800;
+    margin: 0;
 }
 
-.text{
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 29.96px;
-    text-align: center;
-
+.text {
     color: var(--secondary-text-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 24px 0;
+    line-height: 1.8;
 }
 
 .btn {
-    display: block;
-    height: 99px;
-    border: 0px solid transparent;
-    margin-top: 69px;
-    margin-bottom: 164px;
+    --bg: #1C1C25;
+    --w: 364px;
+    --h: 100px;
+    --bdrs: 30px;
+    --hover-bg: #6B68EC;
 
-    cursor: pointer;
-    border-radius: 30px;
-
-    text-align: center;
+    width: var(--w);
+    height: var(--h);
+    border-radius: var(--bdrs);
+    background: var(--bg);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 40px 0;
+    transition: 0.3s;
 }
 
-.btn.link {
-    padding: 37px 86px;
+.btn:hover {
+    background-color: var(--hover-bg);
+}
 
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24.51px;
+.btn-red {
+    --bg: #b93737;
+    --hover-bg: #a32828;
+}
 
-    text-decoration: none;
-    color: var(--button-text-color);
-    background-color: var(--btn-bg-color);
+.btn-blue {
+    --bg: #3150a5;
+    --hover-bg: #223a7e;
+}
+
+.btn-sm {
+    --w: 344px;
+    --h: 80px;
+}
+
+.btn-lg {
+    --w: 384px;
+    --h: 120px;
+}
+
+.btn-icon {
+    --w: var(--h);
+}
+
+.btn-round {
+    --bdrs: 100px;
+}
+
+.btn-square {
+    --bdrs: 0px;
 }
